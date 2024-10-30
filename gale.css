@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Aclonica", sans-serif;
+}
+.encabezado{
+    background-image: linear-gradient(rgba(61, 105, 74, 0.7),rgba(26, 243, 73, 0.7));
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.menu{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu a{
+    text-decoration: none;
+    padding: 0 30px;
+    font-size: 20px;
+    color: rgb(238, 241, 238);
+}
+.section-1{
+    background-image: url(herbalife-slider-6-1030x404.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-1 h1{
+    margin: 20px 0;
+    font-size: 40px;
+    color: blue;
+}
+.section-1 p{
+    font-size: 23px;
+    color: rgb(26, 59, 168);
+    
+}
+.galeria{
+    background-image: linear-gradient(rgba(61, 105, 74, 0.7),rgba(26, 243, 73, 0.7));
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.card{
+    width: 250px;
+    height: 250px;
+    margin: 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    position: relative;
+    transition: 1s;
+    
+
+}
+.card .img-galeria{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card .img-galeria img{
+    width: 100%;
+    height: 100%;
+
+}
+.card .texto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    transform: scale(0.9);
+    transition: 1s;
+}
+.card:hover{
+    filter: blur(0)!important;
+    transform: translateX(-100px)rotate(-5deg);
+
+}
+.galeria:hover .card{
+    filter: blur(2px);
+}
+.card:hover .texto{
+    left: 90%;
+}
